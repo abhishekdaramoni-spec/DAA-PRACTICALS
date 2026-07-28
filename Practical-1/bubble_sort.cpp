@@ -1,5 +1,5 @@
 #include <iostream>
-#include <chrono> // For measuring execution time
+#include <chrono> 
 using namespace std;
 using namespace std::chrono;
 
@@ -18,10 +18,10 @@ int main()
         cin >> arr[i];
     }
 
-    // Start Timer
+ 
     auto start = high_resolution_clock::now();
 
-    // Optimized Bubble Sort
+
     for (int i = 0; i < n - 1; i++)
     {
         bool swapped = false;
@@ -35,15 +35,13 @@ int main()
             }
         }
 
-        // Stop if already sorted
         if (!swapped)
             break;
     }
 
-    // Stop Timer
+ 
     auto stop = high_resolution_clock::now();
 
-    // Calculate execution time
     auto duration = duration_cast<nanoseconds>(stop - start);
 
     cout << "\nSorted array: ";
