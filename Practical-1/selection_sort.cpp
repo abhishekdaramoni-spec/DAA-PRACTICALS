@@ -1,6 +1,5 @@
 #include <iostream>
 #include <chrono>
-// chrono is used for checking execution time
 using namespace std;
 using namespace chrono;
 
