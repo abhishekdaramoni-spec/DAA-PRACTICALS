@@ -1,11 +1,11 @@
 #include <iostream>
-#include <chrono> // Added for execution time
+#include <chrono> 
 using namespace std;
 using namespace std::chrono;
 
 int partition(int arr[], int low, int high)
 {
-    int pivot = arr[high]; // Last element as pivot
+    int pivot = arr[high]; 
     int i = low - 1;
 
     for (int j = low; j < high; j++)
@@ -21,7 +21,6 @@ int partition(int arr[], int low, int high)
     return i + 1;
 }
 
-// Quick Sort function
 void quickSort(int arr[], int low, int high)
 {
     if (low < high)
@@ -48,15 +47,14 @@ int main()
         cin >> arr[i];
     }
 
-    // Start Timer
+
     auto start = high_resolution_clock::now();
 
     quickSort(arr, 0, n - 1);
 
-    // Stop Timer
+  
     auto stop = high_resolution_clock::now();
 
-    // Calculate Execution Time
     auto duration = duration_cast<nanoseconds>(stop - start);
 
     cout << "\nSorted array: ";
