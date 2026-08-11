@@ -13,11 +13,3 @@ In a Max Heap, the **largest element is always present at the top** of the heap.
 5. This process is repeated until all elements are sorted.
 6. Finally, the sorted array and execution time are displayed.
 
-## Example
-
-### Input
-
-```text
-Enter number of elements: 5
-Enter elements:
-40 10 30 50 20
