@@ -1,15 +1,9 @@
-# Max Heap Sort
+Max Heap 
 
-Max Heap Sort is a sorting algorithm that uses a **Max Heap** data structure to sort elements in ascending order.
+A Max Heap is a type of binary tree where the parent element is always greater than its child elements. Because of this, the largest element is always present at the top (root).
 
-In a Max Heap, the **largest element is always present at the top** of the heap.
+In Max Heap, elements are arranged level by level from left to right. When we add or remove an element, we compare it with its parent or children and swap the elements if necessary to maintain the Max Heap property.
 
-## How It Works
+For Heap Sort, we first create a Max Heap. Then we take the largest element from the top and move it to the end of the array. After that, we heapify the remaining elements and repeat the same process until the complete array is sorted in ascending order.
 
-1. The program takes the number of elements and their values as input.
-2. It creates a Max Heap from the given elements.
-3. The largest element is placed at the end of the array.
-4. The remaining elements are heapified again.
-5. This process is repeated until all elements are sorted.
-6. Finally, the sorted array and execution time are displayed.
-
+The time complexity of Heap Sort is O(n log n), and the space complexity is O(log n) when recursive heapify is used.
