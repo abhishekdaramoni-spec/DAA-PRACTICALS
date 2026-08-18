@@ -1,46 +1,7 @@
-# Factorial Using Iterative and Recursive Methods
+## Summary
 
-This project calculates the factorial of a number using two different approaches:
+In this project, I implemented factorial using both **iterative and recursive methods** in C++. The iterative method uses a `for` loop and calculates the result step by step. The recursive method calls the same function with a smaller value until it reaches the base case. Both methods give the same result, but their working process and memory usage are different. I also compared their execution time, time complexity, and space complexity.
 
-1. **Iterative Method**
-2. **Recursive Method**
+## Conclusion
 
-Both methods produce the same result, but they work differently. This project compares their **working process, execution time, time complexity, and space complexity**.
-
----
-
-## 1. Iterative Method
-
-The iterative method uses a `for` loop to calculate the factorial.
-
-The main part of the code is:
-
-```cpp
-unsigned long long factorial(int n)
-{
-    unsigned long long fact = 1;
-
-    for (int i = 1; i <= n; i++)
-    {
-        fact = fact * i;
-    }
-
-    return fact;
-}
-
----
-
-## 2. Recursive Method
-
-The recursive method calculates the factorial by calling the same function again with `n - 1`.
-
-The main part of the code is:
-
-```cpp
-unsigned long long factorial(int n)
-{
-    if (n <= 1)
-        return 1;
-
-    return n * factorial(n - 1);
-}
+From this project, I understood how the same problem can be solved using two different approaches. The iterative method is simple and uses less memory, while the recursive method is easier to understand for problems that can be broken into smaller parts but uses extra memory because of the function call stack. Both methods have **O(n) time complexity**, but the iterative method has **O(1) space complexity** and the recursive method has **O(n) space complexity**. This helped me understand the practical difference between iteration and recursion.
