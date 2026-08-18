@@ -1,4 +1,4 @@
-## 📌 Summary
+##  Summary
 
 This project solves the **Coin Change Problem** using the **Dynamic Programming** approach. The main goal is to find the minimum number of coins needed to make a given amount using the available coin denominations.
 
